@@ -1,0 +1,6 @@
+﻿  First App.cpp
+  LessonsTasks.cpp
+C:\Users\Mikhail\source\repos\First App\First App\Auto.h(18,17): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Mikhail\source\repos\First App\First App\LessonsTasks.cpp(29,6): warning C4102: https: неиспользованная метка
+  Создание кода...
+  First App.vcxproj -> C:\Users\Mikhail\source\repos\First App\Debug\First App.exe
