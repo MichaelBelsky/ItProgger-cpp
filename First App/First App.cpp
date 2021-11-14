@@ -13,15 +13,16 @@
 //#include "Auto.h"
 
 
+
 using namespace std;
 
 
 int main() {
     setlocale(LC_ALL, "Russian");
 
-	RunLessons();
+//	RunLessons();
 
-//	RunTraining();
+	RunTraining();
 
 
 //	1. Создайте файл hi.txt и поместите в него строку : «Какая - угодно информация!».

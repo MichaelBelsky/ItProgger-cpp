@@ -2,10 +2,14 @@
 #include <iostream>
 #include <string>
 #include <time.h>
+#include "arraysMinimal.h"
+#include "arraysMinimal.inl"
 
 using namespace std;
 
-void Variables1();
+void Lesson_28();
+
+void Variables1(); 
 void Variables2();
 void Variables3();
 void Variables4();
@@ -29,6 +33,15 @@ void Conditions9();
 void Conditions10();
 
 void array1();
+void array2();
+void array3();
+void array4();
+void array5();
+void array6();
+void array7();
+void array8();
+void array9();
+void array10();
 
 void RunTraining() {
 // 	Numbers();
@@ -37,7 +50,7 @@ void RunTraining() {
 
 //	Conditions10();		//	2. C++ - Условные операторы
 
-	array1();
+	array4();			//	3. C++ - Работа с массивом
 };
 
 //int ar[] = { 728, 3, 402, -1 };
@@ -440,6 +453,23 @@ void Conditions10(){
 	cout << rand_num << endl;
 };
 
+	void Lesson_28() {
+		srand(time_t(NULL));
+		WorkArrays<int, 10> int_arr;
+		WorkArrays<float, 10> float_arr;
+		WorkArrays<long long, 10> long_arr;
+
+		for (int i = 0; i < int_arr.getLength(); i++) {
+			int_arr[i] = rand() % 100;
+			float_arr[i] = rand() % 100;
+			long_arr[i] = rand() % 100;
+		}
+
+		int_arr.minimum();
+		float_arr.minimum();
+		long_arr.minimum();
+	};
+
 
 //	Минимум и максимум
 void array1() {
@@ -466,3 +496,84 @@ void array1() {
 	};
 	cout << max << endl << min << endl;
 };
+
+//	Массив от пользователя
+void array2() {
+	//	Создайте программу, в которой пользователь будет устанавливать длину массива и вводить
+	//	все его элементы с клавиатуры.
+	int len;
+	cout << "Введите длину массива" << endl;
+	cin >> len;
+	int* arr;
+	arr = new int [len];
+	cout << "Введите массив" << endl;
+	for (int i = 0; i < len; i++)
+	{
+		cin >> arr[i];
+	}
+
+	cout << "Вот ваш массив arr[" << len << "]" << endl;
+	for (int i = 0; i < len; i++)
+	{
+		cout << arr[i] << " | ";
+	}
+	delete[] arr;
+};
+
+//	Сортировка массива
+void array3() {
+	//	Создайте программу, которая будет просить пользователя ввести размер массива,
+	//	а также все значения элементов для массива.
+	//	После ввода данных массив будет сортироваться в порядке возрастания элементов.
+	//	В конце программы выведите получившийся массив на экран.
+	int len;
+	cout << "Введите длину массива" << endl;
+	cin >> len;
+	int* arr;
+	arr = new int[len];
+	cout << "Введите массив" << endl;
+	for (int i = 0; i < len; i++)
+	{
+		cin >> arr[i];
+	}
+
+	cout << "Вот ваш массив arr[" << len << "]" << endl;
+
+	int temp; // временная переменная для обмена элементов местами
+	for (int i = 0; i < len - 1; i++) {
+		for (int j = 0; j < len - i - 1; j++) {
+			if (arr[j] > arr[j + 1]) {
+				// меняем элементы местами
+				temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+
+	for (int i = 0; i < len; i++)
+	{
+		cout << arr[i] << " | ";
+	}
+	delete[] arr;
+};
+
+//	Двумерный массив
+void array4() {
+	/*Создайте двумерный массив и выведите его на экран при помощи циклов while.
+		Двумерный массив данных :*/
+	const int len = 3;
+	int x[len][len] = { { 0, 34, 2 }, { 9, 12, 18 }, { 3, 4, 5 } };
+	
+	int i = 0;
+	while (i < len)
+	{
+		int j = 0;
+		while (j < len)
+		{
+			cout << x[i][j] << " | ";
+				j++;
+		}
+		i++;
+	}
+}

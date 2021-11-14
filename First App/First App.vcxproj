@@ -148,10 +148,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2 - Введение в ООП. Классы и объекты.cpp" />
+    <ClCompile Include="arraysMinimal.inl" />
     <ClCompile Include="AskAge.cpp" />
     <ClCompile Include="AskName.cpp" />
     <ClCompile Include="Auto.cpp" />
     <ClCompile Include="First App.cpp" />
+    <ClCompile Include="human.cpp" />
     <ClCompile Include="LessonsTasks.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="print.cpp" />
@@ -159,9 +161,11 @@
     <ClCompile Include="trainings.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arraysMinimal.h" />
     <ClInclude Include="AskAge.h" />
     <ClInclude Include="AskName.h" />
     <ClInclude Include="Auto.h" />
+    <ClInclude Include="human.h" />
     <ClInclude Include="LessonsTasks.h" />
     <ClInclude Include="math.h" />
     <ClInclude Include="print.h" />
@@ -171,6 +175,12 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="First App.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
