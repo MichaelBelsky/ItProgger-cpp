@@ -6,21 +6,22 @@ C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(105,20): warning
 C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(142,16): warning C4305: инициализация: усечение из "double" в "float"
 C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(162,21): warning C4305: инициализация: усечение из "double" в "float"
 C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(226,12): warning C4305: =: усечение из "double" в "float"
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(450,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(451,12): warning C4101: user_num: неиспользованная локальная переменная
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(464,26): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(448,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(449,12): warning C4101: user_num: неиспользованная локальная переменная
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(463,26): warning C4244: =: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(606,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 C:\Users\Mikhail\source\repos\First App\First App\arraysMinimal.inl(13,13): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
           with
           [
               T=float
           ]
 C:\Users\Mikhail\source\repos\First App\First App\arraysMinimal.inl(12): message : во время компиляции функции-члена класс шаблон "void WorkArrays<float,10>::minimum(void)"
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(469): message : выполняется компиляция ссылки на экземпляр шаблон функции "void WorkArrays<float,10>::minimum(void)"
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(459): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "WorkArrays<float,10>"
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(468): message : выполняется компиляция ссылки на экземпляр шаблон функции "void WorkArrays<float,10>::minimum(void)"
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(458): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "WorkArrays<float,10>"
 C:\Users\Mikhail\source\repos\First App\First App\arraysMinimal.inl(16,24): warning C4244: =: преобразование "T" в "int", возможна потеря данных
           with
           [
@@ -32,8 +33,8 @@ C:\Users\Mikhail\source\repos\First App\First App\arraysMinimal.inl(13,13): warn
               T=__int64
           ]
 C:\Users\Mikhail\source\repos\First App\First App\arraysMinimal.inl(12): message : во время компиляции функции-члена класс шаблон "void WorkArrays<__int64,10>::minimum(void)"
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(470): message : выполняется компиляция ссылки на экземпляр шаблон функции "void WorkArrays<__int64,10>::minimum(void)"
-C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(460): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "WorkArrays<__int64,10>"
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(469): message : выполняется компиляция ссылки на экземпляр шаблон функции "void WorkArrays<__int64,10>::minimum(void)"
+C:\Users\Mikhail\source\repos\First App\First App\trainings.cpp(459): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "WorkArrays<__int64,10>"
 C:\Users\Mikhail\source\repos\First App\First App\arraysMinimal.inl(16,24): warning C4244: =: преобразование "T" в "int", возможна потеря данных
           with
           [

@@ -50,7 +50,7 @@ void RunTraining() {
 
 //	Conditions10();		//	2. C++ - Условные операторы
 
-	array4();			//	3. C++ - Работа с массивом
+	array5();			//	3. C++ - Работа с массивом
 };
 
 //int ar[] = { 728, 3, 402, -1 };
@@ -420,9 +420,7 @@ void Conditions8() {
 	//	x = значение1;
 	//else
 	//	x = значение2;
-
 	//Можно записать как :
-
 	//x = (условие) ? значение1 : значение2;
 
 	int num_1, num_2;
@@ -453,7 +451,8 @@ void Conditions10(){
 	cout << rand_num << endl;
 };
 
-	void Lesson_28() {
+//	сложный урок с созданием шаблона класса
+void Lesson_28() {
 		srand(time_t(NULL));
 		WorkArrays<int, 10> int_arr;
 		WorkArrays<float, 10> float_arr;
@@ -558,22 +557,72 @@ void array3() {
 	delete[] arr;
 };
 
-//	Двумерный массив
+//	Двумерный массив !!! ДИНАМИЧЕСКИЙ !!!
 void array4() {
 	/*Создайте двумерный массив и выведите его на экран при помощи циклов while.
 		Двумерный массив данных :*/
-	const int len = 3;
-	int x[len][len] = { { 0, 34, 2 }, { 9, 12, 18 }, { 3, 4, 5 } };
+	int lines, columns;	// строки, столбцы
+	cout << "Введите количество строк и элементов в строке" <<endl;
+	cin >> lines >> columns;
+	//int x[len][len] = { { 0, 34, 2 }, { 9, 12, 18 }, { 3, 4, 5 } };
 	
+	int** arr = new int* [lines];	
+
+	for (int i = 0; i < lines; i++)
+			arr[i] = new int[columns];
+	srand(time_t(NULL));	// сброс точки отсчета для генератора случ чисел
+
+	// заполнение массива
+	for (int count_row = 0; count_row < lines; count_row++)
+		for (int count_column = 0; count_column <columns; count_column++)
+			arr[count_row][count_column] = rand() % 100;
+
 	int i = 0;
-	while (i < len)
+	while (i < lines)
 	{
 		int j = 0;
-		while (j < len)
+		while (j < columns)
 		{
-			cout << x[i][j] << " | ";
+			cout << arr[i][j] << " | ";
 				j++;
 		}
+		cout << endl;
 		i++;
 	}
+	// удаление двумерного динамического массива
+	for (int count = 0; count < lines; count++)
+		delete []arr[count];
 }
+
+//Почти самый маленький
+void array5() {
+	//	Создайте массив и программу, которая будет находить второй самый 
+	//	маленький элементв массиве.
+	int len;
+	cout << "Введите длину массива" << endl;
+	cin >> len;
+	int* arr;
+	arr = new int[len];
+	srand(time(0));	// сброс точки отсчета для генератора случ чисел
+	for (int i = 0; i < len; i++){
+		arr[i] = rand() % 1000;
+		cout << arr[i] << "|";
+	}
+
+	int min=arr[0], premin=0;
+
+	for (int i = 1; i < len; i++)
+	{
+		if (min > arr[i])
+		{
+			premin = min;
+			min = arr[i];
+		}
+		else if (premin> arr[i])
+		{
+			premin = arr[i];
+		}
+	}
+	cout << endl << "второй наименьший элемент: " << premin << endl << min;
+	delete[] arr;
+};
