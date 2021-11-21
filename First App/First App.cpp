@@ -10,19 +10,47 @@
 #include "Tiles.h"
 #include "trainings.h"
 #include "LessonsTasks.h"
+#include <stack>
 //#include "Auto.h"
 
+	//	Создайте класс StackWork.Класс должен быть шаблонным, принимающим тип данных.
+	//	Добавьте переменную, которая будет типа данных stack.Тип данных у стека будет
+	//	указываться через переданный тип данных в шаблон класса.
 
+	//	Создайте конструктор, принимающий число(длина стека).В цикле просите пользователя ввести все значения в стек.
+
+	//	Создайте функцию для вывода всего содержимого стека.Сделайте эту функцию встроенной.
+
+	//	Создайте объект на основе класса, укажите значения и выведите все значения через функцию класса
 
 using namespace std;
+
+template <class DataType>
+class StackWork
+{
+private:
+	stack<DataType> st;
+public:
+	StackWork(int len) {
+		DataType unit;
+		for (int i = 0; i < len; i++)
+		{
+			cout << "Введите" << i + 1 << "й элемент массива" << endl;
+		}
+	};
+
+};
+
 
 
 int main() {
     setlocale(LC_ALL, "Russian");
 
-//	RunLessons();
 
-	RunTraining();
+//	stack<float> st;
+	RunLessons();
+
+//	RunTraining();
 
 
 //	1. Создайте файл hi.txt и поместите в него строку : «Какая - угодно информация!».

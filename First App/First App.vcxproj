@@ -157,6 +157,7 @@
     <ClCompile Include="LessonsTasks.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="print.cpp" />
+    <ClCompile Include="StackWork.cpp" />
     <ClCompile Include="Tiles.cpp" />
     <ClCompile Include="trainings.cpp" />
   </ItemGroup>
@@ -170,6 +171,7 @@
     <ClInclude Include="math.h" />
     <ClInclude Include="print.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="StackWork.h" />
     <ClInclude Include="Tiles.h" />
     <ClInclude Include="trainings.h" />
   </ItemGroup>
