@@ -25,29 +25,9 @@
 
 using namespace std;
 
-template <class DataType>
-class StackWork
-{
-private:
-	stack<DataType> st;
-public:
-	StackWork(int len) {
-		DataType unit;
-		for (int i = 0; i < len; i++)
-		{
-			cout << "Введите" << i + 1 << "й элемент массива" << endl;
-		}
-	};
-
-};
-
-
-
 int main() {
     setlocale(LC_ALL, "Russian");
 
-
-//	stack<float> st;
 	RunLessons();
 
 //	RunTraining();

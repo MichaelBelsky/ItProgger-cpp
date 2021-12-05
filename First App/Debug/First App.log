@@ -1,7 +1,7 @@
 ﻿  LessonsTasks.cpp
 C:\Users\Mikhail\source\repos\First App\First App\Auto.h(18,17): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-C:\Users\Mikhail\source\repos\First App\First App\LessonsTasks.cpp(28,6): warning C4102: https: неиспользованная метка
-C:\Users\Mikhail\source\repos\First App\First App\LessonsTasks.cpp(143,33): warning C4305: аргумент: усечение из "double" в "HealthType"
+C:\Users\Mikhail\source\repos\First App\First App\LessonsTasks.cpp(30,6): warning C4102: https: неиспользованная метка
+C:\Users\Mikhail\source\repos\First App\First App\LessonsTasks.cpp(145,33): warning C4305: аргумент: усечение из "double" в "HealthType"
           with
           [
               HealthType=float

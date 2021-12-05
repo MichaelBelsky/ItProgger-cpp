@@ -154,8 +154,10 @@
     <ClCompile Include="Auto.cpp" />
     <ClCompile Include="First App.cpp" />
     <ClCompile Include="human.cpp" />
+    <ClCompile Include="IMyClass.cpp" />
     <ClCompile Include="LessonsTasks.cpp" />
     <ClCompile Include="math.cpp" />
+    <ClCompile Include="MyClass.cpp" />
     <ClCompile Include="print.cpp" />
     <ClCompile Include="StackWork.cpp" />
     <ClCompile Include="Tiles.cpp" />
@@ -167,8 +169,10 @@
     <ClInclude Include="AskName.h" />
     <ClInclude Include="Auto.h" />
     <ClInclude Include="human.h" />
+    <ClInclude Include="IMyClass.h" />
     <ClInclude Include="LessonsTasks.h" />
     <ClInclude Include="math.h" />
+    <ClInclude Include="MyClass.h" />
     <ClInclude Include="print.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="StackWork.h" />
